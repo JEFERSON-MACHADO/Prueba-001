@@ -1,0 +1,145 @@
+/* Enlazar con una fuente externa Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@500&display=swap');
+
+/* Eliminar el margen y espaciado interno predeterminado */
+* {
+   margin: 0;
+   padding: 0;
+}
+main {
+   max-width: auto;
+   min-width: auto;
+   margin: auto;
+}
+/* Declaración de variables */
+:root {
+   --color1:#FFC2A3;
+   --color2:#DBDBD7;
+   --color3:#FFA369;
+   --color4:#42F5AB;
+   --color5:#90B1E8;
+   --color6: #FFBEB8;
+   --color7: #9090E8;
+   --color-blanco:#ffffff;
+   --color-negro:#000000;
+   --color-gris-oscuro:#454545;
+}
+img {
+   width: 100px;
+}
+
+/* Selector de estilo de tipo HTML */
+body {
+   color:var(--color5); /* Color del texto */
+   /* Color del fondo */
+
+   /* Tipo de letra */
+   /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+   /* Aplicar la fuente externa enlazada de Google Fonts */
+   font-family: 'Fredoka One', cursive;
+   font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+   font-size: 68px; /* Tamaño de la letra */
+   font-weight: 500; /* Grosor de la letra */
+   font-family: 'Fredoka One';
+   color: var(--color7);
+   
+   /* Muestra el texto el mayúscula, minúsculas */
+   text-transform: capitalize; /* Primera letra de cada palabra en mayuscula */
+}
+
+h2 {
+   font-size: 40px;
+   font-weight: 200; /* Grosor de la letra */
+   text-transform: uppercase; /* Todo en minúsculas */
+   font-family: 'Fredoka One';
+   color: var(--color1);
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: 500; /* Grosor de la letra */
+   text-transform: uppercase; /* Todo en mayúsculas */
+   font-family: 'Fredoka One';
+   color: var(--color5);
+}
+
+
+/* Selectores de tipo ID */
+#cabecera {
+   background-color:white;
+   color: var(--color);
+   padding-bottom: 50px;
+   margin-bottom: 20px;
+}
+
+#ayuda {
+   background-color: var(--color2);
+   color: var(--color-gris-oscuro);
+}
+video_clip{
+   border-radius: 20px 20px 20px;
+}
+#clips{
+   background-color: #aab6ec;
+   
+}
+
+/* Selectores de tipo CLASS */
+.espacio_clip {
+   border-width: 50px;
+   color: #f50a0a;
+   font-size: 40px;
+}
+
+.contenedor {
+   /* Ancho máximo para la caja contenedora */
+   max-width: 1200px;
+   text-align: justify;
+
+   /* Centra horizontalmente la caja contenedora */
+   margin-left: auto;
+   margin-right: auto;
+}
+.contenedor1 {
+   /* Ancho máximo para la caja contenedora */
+   max-width: 1200px;
+
+   /* Centra horizontalmente la caja contenedora */
+   margin-left: right;
+   margin-right: right;
+   text-align: right;
+   font-size: 27px;
+}
+
+.fila {
+   /* Coloca las cajas internas, una al lado de la otra, en dirección de una fila */
+   display: flex;
+
+   /* Truco: Elimina el espacio izquierdo de la primera caja y 
+   el espacio derecho de la última caja hijo */
+   margin-left: -15px;
+   margin-right: -15px;
+}
+
+.fila2 {
+   /* Coloca las cajas internas, una al lado de la otra, en dirección de una fila */
+   display: flex;
+
+   /* Truco: Elimina el espacio izquierdo de la primera caja y 
+   el espacio derecho de la última caja hijo */
+   margin-left: 350px;
+   margin-right: 350px;
+}
+
+.columna {
+   flex-basis: 0; /* Ancho mínimo para una caja hijo */
+   flex-grow: 1; /* Ajusta el ancho proporcionalmente a cada una de las cajas hijo */
+
+   /* Espacio interno para separar una caja de la otra */
+   padding-left: 15px;
+   padding-right: 15px;
+}
